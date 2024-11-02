@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+<body>
+
+    <div class="register-container">
+        <h2>Registro</h2>
+        <form>
+            <!-- Datos de Acceso -->
+            <h3>Datos de Acceso</h3>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <input type="password" placeholder="Confirmar contraseña" required>
+            <!-- Datos Personales -->
+            <h3>Datos Personales</h3>
+            <select required>
+                <option value="" disabled selected>*Tipo</option>
+                <option value="CC">CC</option>
+                <option value="CE">CE</option>
+                <option value="TI">TI</option>
+                <option value="PT">PT</option>
+            </select>
+            <input type="text" placeholder="Número de documento" required>
+            <input type="text" placeholder="Nombres" required>
+            <input type="text" placeholder="Apellidos" required>
+            <input type="tel" placeholder="Teléfono" required>
+            <input type="date" placeholder="Fecha de Nacimiento" required>
+
+            <!-- Checkboxes -->
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox"> Deseo recibir información del Teatro Apolo
+                </label>
+                <label>
+                    <input type="checkbox"> Autorizo recibir promociones
+                </label>
+            </div>
+
+            <button type="submit">Crear cuenta</button>
+        </form>
+    </div>
+
+</body>
+</html>
